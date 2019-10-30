@@ -1,7 +1,9 @@
 apply plugin: 'java-library'
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api files('/Users/zhangfei/Downloads/algs4-1.0.4.jar')
+    implementation project(':core')
 }
 
 sourceCompatibility = "7"
